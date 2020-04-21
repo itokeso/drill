@@ -8,42 +8,64 @@
 # > 足し算結果と掛け算結果の合計値は11です
 
 
-def slice_num(num)
-  x = (num / 10) % 10
-  y = (num / 1) % 10
+# def slice_num(num)
+#   x = (num / 10) % 10
+#   y = (num / 1) % 10
+#   return x,y
+# end
+
+# puts "２桁の整数を入力して下さい"
+# input = gets.to_i
+# x,y = slice_num(input)
+# puts x + y + x * y
+
+
+
+
+# # 回答
+
+
+# def addition(a, b)
+#   a + b
+# end
+
+# def multiplication(a,b)
+#   a * b
+# end
+
+# def slice_num(num)
+#   # 10の位
+#   tens_place = (num / 10) % 10
+#   # 1の位
+#   ones_place = (num / 1) % 10
+#   return tens_place, ones_place
+# end
+
+# puts "二桁の整数を入力してください"
+# input = gets.to_i
+# X, Y = slice_num(input)
+# add_result = addition(X, Y)
+# multiple_result = multiplication(X, Y)
+# puts "足し算結果と掛け算結果の合計値は#{add_result + multiple_result}です"
+
+
+
+def slice_num(input)
+  x = (input/10) % 10
+  y = (input/1) % 10
   return x,y
 end
 
-puts "２桁の整数を入力して下さい"
-input = gets.to_i
-x,y = slice_num(input)
-puts x + y + x * y
-
-
-
-
-# 回答
-
-
-def addition(a, b)
+def add_price(a,b)
   a + b
 end
 
-def multiplication(a,b)
+def multiple_result(a , b)
   a * b
 end
 
-def slice_num(num)
-  # 10の位
-  tens_place = (num / 10) % 10
-  # 1の位
-  ones_place = (num / 1) % 10
-  return tens_place, ones_place
-end
-
-puts "二桁の整数を入力してください"
+puts "2桁入力"
 input = gets.to_i
-X, Y = slice_num(input)
-add_result = addition(X, Y)
-multiple_result = multiplication(X, Y)
-puts "足し算結果と掛け算結果の合計値は#{add_result + multiple_result}です"
+a, b =  slice_num(input)
+
+puts "合計は#{add_price(a,b)+ multiple_result(a, b)}です"
