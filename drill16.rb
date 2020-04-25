@@ -18,4 +18,4 @@ end
 # 本文: Awesome Ruby!
 
   article = Article.new("阿部", "rubyの素晴らしさについて", "Awesome Ruby")
-  article.info
+  article.info 
