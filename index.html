@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Counter</h1>
+  <div id = "dispcount">0</div>
+  <button id = "down">カウントダウン</button>
+  <button id = "up">カウントアップ</button>
+
+
+  <script>
+    let dispcount = document.getElementById("dispcount");
+    let up = document.getElementById("up");
+    let down = document.getElementById("down");
+    let count = 0;
+
+    up.addEventListener('click',function(){
+      count += 1;
+      dispcount.innerHTML = count;
+    });
+    down.addEventListener('click', function(){
+      count -= 1
+      dispcount.innerHTML = count;
+    });
+
+  </script>
+</body>
+</html>
