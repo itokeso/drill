@@ -2,7 +2,7 @@
 
 # （１） "Today" " is" " sunny"
 # （２） "Today is sunny"
- puts "Today " + "is " + "sunny"
+puts "Today " + "is " + "sunny"
 
 
 # 下記の（１）を変換して（２）にするためのコードを記述してください。
