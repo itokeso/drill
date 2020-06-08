@@ -1,9 +1,7 @@
+# Dある10進数の正の整数 n が与えられます。
 
+# n が何桁かを数字で出力してください。
 
-x = gets.to_i
-
-if x >= 10000
-  puts x
-else
-  puts x + 10000
-end
+# chars文字列を配列に変換
+n = gets.chars
+puts n.length - 1
