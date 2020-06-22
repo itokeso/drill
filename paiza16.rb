@@ -21,8 +21,7 @@ a.each { |n|
          num << n.to_i
         else kigou << n
         end
-         }
-         
+         }       
 if a[0] == "x" && a.include?('-') || a[4] == "x" && a.include?('+') || a[2] == "x" && a.include?('-')
     puts num.inject{|s,t| s+t}
 else
